@@ -12,7 +12,7 @@
   </enumeration>  
   <class id="2" language="java" name="domain.Clima" project="QueMePongo" file="/QueMePongo/src/domain/Clima.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="209" x="31" y="345"/>    
+    <position height="156" width="209" x="30" y="745"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </enumeration>  
   <class id="7" language="java" name="domain.Sugerencias" project="QueMePongo" 
     file="/QueMePongo/src/domain/Sugerencias.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="136" width="492" x="1012" y="345"/>    
+    <position height="136" width="492" x="21" y="1218"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   </enumeration>  
   <class id="9" language="java" name="domain.Atuendo" project="QueMePongo" file="/QueMePongo/src/domain/Atuendo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="136" width="379" x="572" y="345"/>    
+    <position height="136" width="379" x="1364" y="591"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="domain.Uniforme" project="QueMePongo" file="/QueMePongo/src/domain/Uniforme.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="96" width="263" x="421" y="552"/>    
+    <position height="96" width="263" x="1521" y="820"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -214,7 +214,7 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="50">    
-    <bendpoint x="250" y="905"/>    
+    <bendpoint x="278" y="955"/>    
     <end type="SOURCE" refId="4" navigable="false">      
       <attribute id="51" name="categoria"/>      
       <multiplicity id="52" minimum="0" maximum="1"/>    
