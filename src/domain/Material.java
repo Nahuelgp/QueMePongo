@@ -6,5 +6,8 @@ public enum Material {
 	SEDA,
 	LANA,
 	POLIESTER,
+	PIQUE,
+	ACETATO,
+	DE_VESTIR,
 	PLASTICO;
 }
