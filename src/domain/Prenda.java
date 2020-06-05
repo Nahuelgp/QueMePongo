@@ -10,14 +10,16 @@ public class Prenda {
 	Color colorSecundario;
 	Trama trama;
 	float temperaturaMaximaAdecuada;
+	Criterio criterio;
 	
-	public Prenda(TipoDePrenda tipo, Categoria categoria, Material material, Color colorPrincipal, Color colorSecundario, Trama trama, float temperaturaMaximaAdecuada) {
+	public Prenda(TipoDePrenda tipo, Categoria categoria, Material material, Color colorPrincipal, Color colorSecundario, Trama trama, float temperaturaMaximaAdecuada, Criterio criterio) {
 		this.tipo = tipo;
 		this.categoria = categoria;
 		this.material = material;
 		this.colorPrincipal = colorPrincipal;
 		this.colorSecundario = colorSecundario;
 		this.temperaturaMaximaAdecuada = temperaturaMaximaAdecuada;
+		this.criterio = criterio;
 		
 		if (trama == null) {
 			this.trama = Trama.LISA;
@@ -37,6 +39,10 @@ public class Prenda {
 
 	public boolean esAptaParaLaTemperaturaActual() {
 		return temperaturaMaximaAdecuada <= Clima.instance().obtenerClimaActual();
+	}
+	
+	public boolean esDeCriterio(Criterio criterio) {
+		return this.criterio == criterio;
 	}
 	
 }

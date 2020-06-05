@@ -15,6 +15,7 @@ public class Borrador {
 	Color colorSecundario;
 	Trama trama;
 	float temperaturaMaximaAdecuada;
+	Criterio criterio;
 	
 	public Borrador(TipoDePrenda tipo) {
 		this.tipo = tipo;
@@ -55,7 +56,7 @@ public class Borrador {
 	
 	public Prenda crearPrenda() {
 		validarPrenda(tipo, categoria, material, colorPrincipal);
-		return new Prenda(tipo, categoria, material, colorPrincipal, colorSecundario, trama, temperaturaMaximaAdecuada);
+		return new Prenda(tipo, categoria, material, colorPrincipal, colorSecundario, trama, temperaturaMaximaAdecuada, criterio);
 	}
 	
 }
