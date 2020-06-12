@@ -1,0 +1,32 @@
+Creo que entendi bien el patron pero me fue dificil aplicarlo a este problema
+
+@startuml
+class Usuario {
+List<ServicioNotificacion> notificaciones; /'Aca decido cuales acciones recibir'/
+void suscribirseA(ServicioNotificacion servicioNotificacion);
+}
+
+interface ServicioNotificacion {
+/'El empleado deberia poder usar la funcion notificar de cualquier clase que implemente la interfaz ServicioNotificacion'/
+
+void agregarUsuario(Usuario usuario);
+void quitarUsuario(Usuario usuario);
+void notificar();
+}
+
+class SugerenciaDiaria implements ServicioNotificacion {
+List<Usuarios> usuarios;
+void agregarUsuario(Usuario usuario);
+void quitarUsuario(Usuario usuario);
+void notificar(); /'le da a la lista de usuarios que tiene su sugerencia diaria'/
+}
+
+class AlertaClimatica implements ServicioNotificacion {
+List<Usuarios> usuarios;
+void agregarUsuario(Usuario usuario);
+void quitarUsuario(Usuario usuario);
+void notificar(); /'le da a la lista de usuarios que tiene una notificacion de cambio del clima utilizaria la apiweather'/
+/'Cuando hay una alerta climatica deberia poder actualizarse la Sugerencia diaria pero no sabria como implementarlo
+(Y decirle al usuario que lleve paraguas en caso de tormenta, etc)'/
+}
+@enduml
